@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.all{
+   width: 400px;
+   margin: auto;
+
+}
+.box{
+   width: 98%;
+   height: 250px;
+   /* border: 1px solid black; */
+   /* margin-top: 50px; */
+   margin: auto;
+   position: relative;
+   overflow: hidden;
+   background-image: url(/image/RR.png);
+   background-repeat: no-repeat;
+   background-position: center center;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-radius:10px ;
+   box-shadow: 2px 2px 8px 4px rgba(28, 179, 146, 0.8);
+}
+.sun{
+   width: 100px;
+   height: 100px;
+   background-color: rgba(255, 165, 0, 1);
+   border-radius: 50%;
+   position: absolute;
+   top: 100px;
+   left: -15px;
+   animation: sun 5s linear infinite;
+   /* animation-delay: 1.3s; */
+
+   text-align: center;
+   padding-top: 35px;
+   color: rgb(219, 219, 78,.5);
+   font-size: 25px;
+
+
+}
+.cloud1{
+   height: 80px ;
+   width: 150px;
+   position: absolute;
+   top: 10px;
+   left: -10px;
+   opacity: .7;
+   animation: col1 5s linear infinite;
+   animation-delay: .8s;
+}
+.sho{
+   position: relative;
+}
+.shobuj{
+   display: inline;
+   position: absolute; 
+   top: 40px;
+   left: 40px;
+   color: rgb(177, 177, 72);
+}
+
+.cloud2{
+   height: 80px ;
+   width: 150px;
+   position: absolute;
+   bottom: 50px;
+   left:0;
+   opacity: .7;
+   animation: cloud2 5s linear infinite;
+   animation-delay: 2s;
+}
+.cloud3{
+   height: 80px ;
+   width: 150px;
+   position: absolute;
+   bottom: 10px;
+   right: -10px;
+   opacity: .7;
+   animation: cloud3 5s linear infinite;
+   
+}
+@keyframes col1{
+   from{
+      left: -10px;
+      top: 20px;
+   }
+   to{
+      top: 20px;
+      left: 120%;
+   }
+}
+@keyframes cloud2{
+   from{
+      bottom: 50px;
+      left:0px;
+   }
+   to{
+      bottom: 50px;
+      left: 120%;
+   }
+}
+@keyframes cloud3{
+   from{
+      bottom: 10px;
+      right: -10px;
+   }
+   to{
+      bottom: 10px;
+      right: 120%;
+   }
+}
+@keyframes sun{
+   from{
+      bottom: 100px;
+      left: -15px;
+   }
+   to{
+      top: 100px;
+      left: 120%;
+   }
+}
+
+
+
+
+
+
+
+
+.mine{
+   width: 98%;
+   /* height: 130px; */
+   border: 1px solid gray;
+   background-color: rgb(176, 119, 119);
+   text-align: justify;
+   margin: auto;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   border-radius:10px ;
+   box-shadow: 2px 2px 8px 4px rgb(186, 68, 68,0.5);
+   color: rgb(116, 224, 206);
+}
+.mine h2{
+   font-size: 22px;
+   margin-top: 10px;
+   color: rgb(146, 45, 45);
+   text-align: center;
+}
+
+.header{
+   width: 100%;
+   height: 50px;
+   text-align: center;
+   margin-top: 5px;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 700;
+}
+
+.pic{}
+.pic .row{
+   height: 250px;
+   width: 100%;
+}
+.pic .row .col1{
+   width: 49%;
+   height: 250px;
+   float: left;
+}
+.pic .row .col2{
+   width: 49%;
+   margin-left: 5px;
+   height: 250px;
+   float: left;
+}
